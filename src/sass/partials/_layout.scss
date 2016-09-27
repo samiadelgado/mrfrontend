@@ -1,4 +1,182 @@
 .container {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin:0 auto
+}
+/*  main*/
+.main{
+	width:100%;
+	min-height:815px;
+	background:url('../img/main.jpg') no-repeat;
+	background-size: cover;
+	padding-top:1px;
+}
+.main__content{	
+	width:80%;
+	margin:0 auto;
+    position: relative;
+    margin-top: 31%;
+    text-align: center;
+    font-family: Arial;
+    vertical-align: bottom;
+    color: white;
+    .main__content-text{
+    	padding-top: 30px;
+    }
+}
+.signup{
+	width:105px;
+	height:31px;    
+	padding: 10px 20px;
+	background-color: #EF2971;
+	color:$white;
+	border-radius: 22px;
+	text-decoration: none;
+}
+/* title*/
+.title{
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom:30px;
+}
+.white{
+	color:$white;
+}
+.dark,.black{
+	color:#373D4D;
+}
+/* what can I learn?*/
+.slider{
+	width:100%;
+	min-height:446px;
+	background-color: $white;
+	.bx-wrapper{
+		max-width:920px!important;
+		.bx-viewport {
+		    -moz-box-shadow:none;
+		    -webkit-box-shadow: none; 
+		     box-shadow: none
+		}
+		.bx-next {
+		    right: -24px;
+		}
+		.bx-prev {
+		    left: -56px;
+		}		    
+	}
+}
+
+/* benefits */
+.benefits{
+	min-height:575px;
+	background-color: #373D4D;
+
+	.benefits__title{
+		padding-top: 50px;
+		text-align: center;
+		color:$pink;
+		font-size: 18px;
+	}
+	.benefits__text{
+		text-align: center;
+		color:$white;
+		font-size: 14px;
+	}
+	.benefits__img{
+		margin: 0 auto;
+    	display: block;
+	}
+}
+
+/* about us */
+
+.aboutus{
+	background-color: #F5F9F9;
+	min-height:650px;
+	.aboutus__text{
+		color:#3D3D3D;
+		font-size: 18px;
+		line-height: 34.6px;
+		padding-top:20px;
+	}
+	.aboutus__link{
+		text-decoration: none;
+		color:$pink;
+	}
+}
+.text-center{
+	text-align: center;
+}
+/* posts */
+.posts{
+	background-color: $white;
+	min-height:650px;
+	.post__item{
+		background-color: #F5F9F9;
+		margin:20px;
+		&.col{
+			padding:10px;
+		}
+		.post__figure{
+			margin:0;
+		}
+		.post__img{
+			display:block;
+			margin:0 auto;
+		}
+		.post__link{
+			text-transform: uppercase;
+			color:$pink;
+			text-decoration: none;
+		}
+		.post__text,.post__link{
+			font-size: 14px;
+		}
+
+	}
+	.text-center{
+		text-align: center;
+	}
+	.post__readall{
+			text-decoration:none;
+			display:block;
+		}
+}
+.pink{
+		color:$pink;
+	}
+/* guidelines */
+.guidelines{
+    min-height: 921px;
+    .relocates{
+    	position: relative;
+    	top: 131px;
+    	left: 44%;
+    }
+    .left{
+		float:left;
+	}
+	
+	.right{
+		float:right;
+	}
+	.guidelines-item{
+		background-color: $pink;
+		border-radius: 20px;
+		padding:20px;
+		margin:20px;
+		position:relative;
+		.guidelines-title, .guidelines-text{
+			font-size: 14px;
+			color:#3D3D3D;
+		}
+		.guidelines-title{
+			font-size: 16px;
+		}
+	}
+}
+
+.down{
+	position:relative;
+	top: 100px;
 }
