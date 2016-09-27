@@ -8,21 +8,23 @@
 	<link rel="icon" href="img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Title</title>
-	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="scripts/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <!-- header -->
-<header>
+<header class="clear">
 	<nav class="menu__nav container">
 		<figure class="logo">
 			<img class="logo--img" src="img/logo.jpg"></img>
 		</figure>
 		<ul class="menu">
-			<li class="menu__item">Home</li>
-			<li class="menu__item">About</li>
-			<li class="menu__item">Service</li>
-			<li class="menu__item">What We Teach</li>
-			<li class="menu__item">Blog</li>
-			<li class="menu__item">Contact</li>
+			<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">About</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Service</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">What We Teach</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
 			<li class="menu__item">
 				<a class="signup" href="#">Sign up</a>
 			</li>
@@ -31,7 +33,7 @@
 </header>
 
 <!-- main -->
-<section class="main">
+<section class="main clear">
 	<div class="container">
 		<div class="main__content">
 			<h1 class="main__content-title">Learn Frontend Development</h1>
@@ -45,43 +47,44 @@
 </section>
 
 <!-- slider technologies -->
-<section class="slider">
+<section class="slider clear">
 	<div class="container">
+        <h2 class="benefits-title title dark">What can I learn?</h2>
 	<!-- html structure for bxslider.com carousel -->
 		<div class="slider1">
-		  <div class="slide"><img src="http://placehold.it/130x130&text=Github"></div>
-		  <div class="slide"><img src="http://placehold.it/130x130&text=Html5"></div>
-		  <div class="slide"><img src="http://placehold.it/130x130&text=Yaoman"></div>
-		  <div class="slide"><img src="http://placehold.it/130x130&text=css3"></div>
-		  <div class="slide"><img src="http://placehold.it/130x130&text=npm"></div>
+		  <div class="slide"><img src="img/learn1.jpg"></div>
+		  <div class="slide"><img src="img/learn2.jpg"></div>
+		  <div class="slide"><img src="img/learn3.jpg"></div>
+		  <div class="slide"><img src="img/learn4.jpg"></div>
+		  <div class="slide"><img src="img/learn5.jpg"></div>
 		</div>
 	</div>
 </section>
 
 <!-- benefits -->
-<section class="benefits">
+<section class="benefits clear">
 	<div class="container">
 		<h2 class="benefits-title title white">Community Benefits</h2>
 		
-		<div class="benefits__item">
+		<div class="benefits__item col col_third">
 			<figure class="benefits__figure">
-				<img class="benefits__img" src="img/benefit1.jpg"></img>
+				<img class="benefits__img" src="img/benefits1.png"></img>
 			</figure>
 			<p class="benefits__title">Personal Support</p>
 			<p class="benefits__text">1-on-1 coaching with a frontend professional and career path advice</p>
 		</div>
 
-		<div class="benefits__item">
+		<div class="benefits__item col col_third">
 			<figure class="benefits__figure">
-				<img class="benefits__img" src="img/benefit2.jpg"></img>
+				<img class="benefits__img" src="img/benefits2.png"></img>
 			</figure>
 			<p class="benefits__title">Professional Skills</p>
 			<p class="benefits__text">Actionable feedback on code reviews and techniques & tooling advice</p>
 		</div>
 
-		<div class="benefits__item">
+		<div class="benefits__item col col_third">
 			<figure class="benefits__figure">
-				<img class="benefits__img" src="img/benefit1.jpg"></img>
+				<img class="benefits__img" src="img/benefits3.png"></img>
 			</figure>
 			<p class="benefits__title">Active & Growing</p>
 			<p class="benefits__text">A community to collaberate and learn with other passionate developers</p>
@@ -90,35 +93,37 @@
 </section>
 
 <!-- guidelines -->
-<section class="guidelines">
-	<div class="container">
-			<h2 class="guidelines-title title pink">Community Benefits</h2>
-			<div class="guidelines-item left">
+<section class="guidelines clear">
+	<div class="container clear">
+			<h2 class="guidelines-title title pink">Join the Community</h2>
+			<div class="guidelines-item left col col-35">
 				<p class="guidelines-title">1. Starting you project</p>
 				<p class="guidelines-text">To get started the best way, you need a project. Because without one, it is very hard for us to coach you and help you to improve your skills.</p>
 				<p class="guidelines-text">If you don't have any project for yourself, we will help you to think about some personal projects. Maybe a todo app, that is the most simple form of a personal side-project.</p>
 			</div>
 
-			<div class="guidelines-item right">
+			<div class="guidelines-item right down col col-35">
 				<p class="guidelines-title">2. We provide feedback</p>
 				<p class="guidelines-text">To get started the best way, you need a project. Because without one, it is very hard for us to coach you and help you to improve your skills.</p>
 				<p class="guidelines-text">If you don't have any project for yourself, we will help you to think about some personal projects. Maybe a todo app, that is the most simple form of a personal side-project.</p>
 			</div>
-			<div class="guidelines-item left">
+			<div class="guidelines-item left col col-35">
 				<p class="guidelines-title">3. Learning and developing</p>
 				<p class="guidelines-text">After you read the resources and feedback, you can start to improve your project with everything you have learned.</p>
 			</div>
 
-			<div class="guidelines-item right">
+			<div class="guidelines-item right down col col-35">
 				<p class="guidelines-title">4. Review and finishing touches</p>
 				<p class="guidelines-text">When you're done with the improvements,you send Github link to us via email (hi@mrfrontend.nl), so we can check your improvements again.</p>
 			</div>
-			<a class="signup text-center" href="#">Sign up</a>
+            
 		</div>	
-	</div>
+
+        <a class="signup text-center relocates" href="#">Sign up</a>
+   
 </section>
 <!-- guidelines -->
-<section class="aboutus">
+<section class="aboutus clear">
 	<div class="container">
 		<h2 class="title dark">About Us</h2>
 		<p class="aboutus__text">
@@ -135,6 +140,115 @@
 		</p>
 	</div>
 </section>
-<script src="js/jquery.js"></script>
+
+<!-- testimonials -->
+
+<section class="testimonials">
+    <div class="container">
+        <h2 class="title white">What people think</h2>
+        <!-- jquery testimonial carousel https://codyhouse.co/gem/client-testimonials-carousel/ -->
+            <div class="cd-testimonials-wrapper cd-container">
+            <ul class="cd-testimonials">
+                <li>
+                    <p>I love the way Mr Frontend helps me with spicing up my CSS & JavaScript skills. The way the communicate is clear but also with a lot of fun. I’ve the feeling the coaches at Mr Frontend have a ton of experience, so that helps a lot!</p>
+                    <div class="cd-author">
+                        <img src="img/avatar-1.jpg" alt="Author image">
+                        <ul class="cd-author-info">
+                            <li>Casey Robins</li>
+                            <li>Junior Frontend Developer</li>
+                        </ul>
+                    </div>
+                </li>
+         
+                <li>
+                    <p>I love the way Mr Frontend helps me with spicing up my CSS & JavaScript skills. The way the communicate is clear but also with a lot of fun. I’ve the feeling the coaches at Mr Frontend have a ton of experience, so that helps a lot!</p>
+                    <div class="cd-author">
+                        <img src="img/avatar-1.jpg" alt="Author image">
+                        <ul class="cd-author-info">
+                            <li>Casey Robins</li>
+                            <li>Junior Frontend Developer</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <p>I love the way Mr Frontend helps me with spicing up my CSS & JavaScript skills. The way the communicate is clear but also with a lot of fun. I’ve the feeling the coaches at Mr Frontend have a ton of experience, so that helps a lot!</p>
+                    <div class="cd-author">
+                        <img src="img/avatar-1.jpg" alt="Author image">
+                        <ul class="cd-author-info">
+                            <li>Casey Robins</li>
+                            <li>Junior Frontend Developer</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul> <!-- cd-testimonials -->
+        </div> <!-- cd-testimonials-wrapper -->
+    </div>
+</section>
+
+<!-- recent posts -->
+<section class="posts clear">
+    <div class="container clear">
+        <h2 class="title dark">Recent Posts</h2>
+        <div class="post__item col col_third_minus">
+            <figure class="post__figure">
+                <img class="post__img" src="img/post1.png"></img>
+            </figure>
+            <p class="post__text">This week Frontend Development weekly link sharing we have again a lot of worthy links for you to check out and to learn from.</p>
+            <a href="#" class="post__link">read more</a>
+        </div>
+
+        <div class="post__item col col_third_minus">
+            <figure class="post__figure">
+                <img class="post__img" src="img/post1.png"></img>
+            </figure>
+            <p class="post__text">So many Frontend Developers grow fast! Sometimes you can have the feeling that your growing really slow.</p>
+            <a href="#" class="post__link">read more</a>
+        </div>
+
+        <div class="post__item col col_third_minus">
+            <figure class="post__figure">
+                <img class="post__img" src="img/post1.png"></img>
+            </figure>
+            <p class="post__text">This week we have again a lot of worthy links for you to check out and to learn from. We have links with Frontend Development, JavaScript, Sass, CSS resources and...</p>
+            <a href="#" class="post__link">read more</a>
+        </div>        
+    </div>
+        <a href="#" class="post__readall pink text-center">Read More Posts</a>
+    
+</section>
+
+<!-- join the community -->
+<section class="join">
+    <div class="container">
+        <h2 class="title white">Join the community</h2>
+        <a class="signup white-border" href="#">Sign up</a>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="copyright">
+            <p class="copyright__text"> ©2016 MrFontend <span class="separator">|</span> Design: Collin Bigart</p>
+        </div>
+
+        <ul class="social_list">
+            <li class="social__item">
+                <a class="social__link"><img src="img/social1.jpg"></a>
+            </li>
+            <li class="social__item">
+                <a class="social__link"><img src="img/social2.jpg"></a>
+            </li>
+            <li class="social__item">
+                <a class="social__link"><img src="img/social3.jpg"></a>
+            </li>
+        </ul>
+        
+    </div>
+</footer>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.bxslider.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
