@@ -3,6 +3,10 @@
   height: auto;
   margin:0 auto
 }
+/*p*/
+p{
+	line-height: 26px;
+}
 /*  main*/
 .main{
 	width:100%;
@@ -131,6 +135,7 @@
 		}
 		.post__text,.post__link{
 			font-size: 14px;
+			line-height: 18px;
 		}
 
 	}
@@ -147,7 +152,7 @@
 	}
 /* guidelines */
 .guidelines{
-    min-height: 921px;
+    min-height: 991px;
     .relocates{
     	position: relative;
     	top: 131px;
@@ -179,4 +184,70 @@
 .down{
 	position:relative;
 	top: 100px;
+}
+
+/*Tesimonials **/
+.testimonials{
+	background-color: $nightblue;
+	ul,li{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	.cd-testimonials-wrapper{
+		background-color: transparent;
+		margin: 0em auto 0em auto;
+		padding-top: 0;
+		&:after{
+			background-color:transparent;
+			color:$pink;
+			top: 285px;
+			font-size: 13.375rem;
+		}
+	}
+	.margin-left{
+		margin-left: 23%;
+	}
+
+}
+
+/* join */
+.join{
+	background-color: $pink;
+	color:$white;
+	min-height: 250px;
+	.signup{
+		display:block;
+		margin:0 auto;
+		width:11%;
+		padding-bottom: 30px;
+		&.white-border{
+			border:2px solid $white;
+		}
+	}
+}
+
+.footer{
+	background-color: $nightblue;
+	.copyright{
+		float:left;
+		color:$white;
+		font-size: 14px;
+		.copyright__text{
+			    padding-top: 9px;
+		}
+		.separator{
+			color:$pink;
+		}
+	}
+	.social_list{
+		float:right;
+		.social__item{
+			float:left;
+			padding-left:15px;
+		}
+	}
 }
