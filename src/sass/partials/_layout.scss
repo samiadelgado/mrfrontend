@@ -3,6 +3,12 @@
   height: auto;
   margin:0 auto
 }
+.normal{
+	background-color: transparent;
+}
+.efecto{
+	background-color: $nightblue;
+}
 /*p*/
 p{
 	line-height: 26px;
@@ -46,6 +52,7 @@ p{
 .white{
 	color:$white;
 }
+
 .dark,.black{
 	color:#373D4D;
 }
@@ -160,17 +167,26 @@ p{
     }
     .left{
 		float:left;
+		@media screen and (max-width: 770px) {
+	      float:none;
+	    }
 	}
 	
 	.right{
 		float:right;
+		@media screen and (max-width: 770px) {
+	      float:none;
+	    }
 	}
 	.guidelines-item{
 		background-color: $pink;
 		border-radius: 20px;
 		padding:20px;
 		margin:20px;
-		position:relative;
+		position:relative; 
+		 @media screen and (max-width: 770px) {
+	      margin:0px;
+	    }
 		.guidelines-title, .guidelines-text{
 			font-size: 14px;
 			color:#3D3D3D;
@@ -184,6 +200,9 @@ p{
 .down{
 	position:relative;
 	top: 100px;
+	@media screen and (max-width: 770px) {
+	     top:20px;
+	}
 }
 
 /*Tesimonials **/
@@ -224,18 +243,39 @@ p{
 		margin:0 auto;
 		width:11%;
 		padding-bottom: 30px;
+		@media screen and (max-width: 770px) {
+	      width:51%;
+	      text-align: center;
+	    }
 		&.white-border{
 			border:2px solid $white;
 		}
 	}
 }
-
+section{
+	padding:20px 0;
+}
+.signdiv{
+	    margin-top: 109px;
+    	margin-bottom: 36px;
+    	@media screen and (max-width: 770px) {
+	    	margin-top: 69px;
+    		margin-bottom: 36px;
+	    }
+}
 .footer{
 	background-color: $nightblue;
+	@media screen and (max-width: 770px) {
+	     
+	     padding: 20px 0;
+	    }
 	.copyright{
 		float:left;
 		color:$white;
 		font-size: 14px;
+		@media screen and (max-width: 770px) {
+	     float:none;
+	    }
 		.copyright__text{
 			    padding-top: 9px;
 		}
@@ -245,6 +285,10 @@ p{
 	}
 	.social_list{
 		float:right;
+		@media screen and (max-width: 770px) {
+	     float:none;
+	     padding: 20px;
+	    }
 		.social__item{
 			float:left;
 			padding-left:15px;

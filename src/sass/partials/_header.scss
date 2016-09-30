@@ -2,22 +2,46 @@ header {
 	width:100%;
 	position:fixed;
 	top:0;
-	
+	z-index: 99999999999999999;
+	@media screen and (max-width: 770px) {
+		background-color: $nightblue;
+		width:100%;
+		text-align: center;
+		z-index: 99999999999999999;
+		position: relative;
+	}
 	.menu__nav .logo{
 		float:left;
 		display:inline;
 		margin:0px;
 		padding:0;
+			@media screen and (max-width: 770px) {
+				
+		background-color: $nightblue;
+			    display:none;
+			    }
 	}
 	.menu{
 		float:right;
 		width:auto;
+		@media screen and (max-width: 770px) {
+			float: none;
+		    width: 100%;
+		    display: block;
+		    position: relative;
+		}
 		.menu__item{
 			float:left;
 			padding-left: 1.8rem;
 			list-style-type: none;
 			font-size: 1rem;
 			color:$white;
+			@media screen and (max-width: 770px){
+				float:none;
+				display:block;
+				padding:20px 0;
+				background-color: $nightblue;
+			}
 			.menu__link{
 				color:$white;
 				text-decoration: none;

@@ -5,6 +5,21 @@
   margin-bottom: 2rem;
   @include transition(ease-in-out, .5s);
 }
+.right,.left{
+  @media screen and (max-width: 770px) {
+      float:none;
+    }
+}
+.slider .bx-controls-direction{
+   @media screen and (max-width: 770px) {
+      display:none;
+    }
+}
+.guidelines .guidelines-item{
+  @media screen and (max-width: 770px) {
+      margin:0px;
+    }
+}
 .col {
   float: left;
   padding: 1.5rem 1.2rem 1.5rem 1.5rem;
@@ -21,12 +36,14 @@
     width: 29%;
     @media screen and (max-width: 770px) {
       width: 100%;
+      float:none
     }
   }
   &.col-35{
   width: 35%;
     @media screen and (max-width: 770px) {
       width: 100%;
+      float:none;
     }
   }
   &.col_half {
